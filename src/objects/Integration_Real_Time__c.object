@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>For Estimation</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Business_Modelling_Complex__c</fullName>
+        <externalId>false</externalId>
+        <formula>( Number_Of_Components_Complex__c  *  Estimating_Factor__r.Business_Modelling_Complex__c ) * (1 +  Contingency_Complex__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Business Modelling Complex</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Business_Modelling_Medium__c</fullName>
+        <externalId>false</externalId>
+        <formula>( Number_Of_Components_Medium__c  *  Estimating_Factor__r.Business_Modelling_Medium__c ) * (1 +  Contingency_Medium__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Business Modelling Medium</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Business_Modelling_Simple__c</fullName>
+        <externalId>false</externalId>
+        <formula>( Number_Of_Components_Simple__c  *  Estimating_Factor__r.Business_Modeling_Simple__c ) * (1 +  Contingency_Simple__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Business Modelling Simple</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Business_Modelling__c</fullName>
+        <externalId>false</externalId>
+        <formula>Business_Modelling_Simple__c +  Business_Modelling_Medium__c +  Business_Modelling_Complex__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Business Modelling</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Capability__c</fullName>
+        <externalId>false</externalId>
+        <label>Capability</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Configuration__c</fullName>
+        <externalId>false</externalId>
+        <label>Configuration</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contingency_Complex__c</fullName>
+        <externalId>false</externalId>
+        <label>Contingency Complex</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Contingency_Medium__c</fullName>
+        <externalId>false</externalId>
+        <label>Contingency Medium</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Contingency_Simple__c</fullName>
+        <externalId>false</externalId>
+        <label>Contingency Simple</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Definition_Complex__c</fullName>
+        <externalId>false</externalId>
+        <label>Definition Complex</label>
+        <length>2000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Definition_Medium__c</fullName>
+        <externalId>false</externalId>
+        <label>Definition Medium</label>
+        <length>2000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Definition_Simple__c</fullName>
+        <externalId>false</externalId>
+        <label>Definition Simple</label>
+        <length>2000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Deployment_Complex__c</fullName>
+        <externalId>false</externalId>
+        <formula>( Number_Of_Components_Complex__c *  Estimating_Factor__r.Deployment_Complex__c )*(1 +  Contingency_Complex__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Deployment Complex</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Deployment_Medium__c</fullName>
+        <externalId>false</externalId>
+        <formula>( Number_Of_Components_Medium__c *  Estimating_Factor__r.Deployment_Medium__c )*(1 +  Contingency_Medium__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Deployment Medium</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Deployment_Simple__c</fullName>
+        <externalId>false</externalId>
+        <formula>( Number_Of_Components_Simple__c *  Estimating_Factor__r.Deployment_Simple__c )*(1 +  Contingency_Simple__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Deployment Simple</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Deployment__c</fullName>
+        <externalId>false</externalId>
+        <formula>Deployment_Simple__c  +  Deployment_Medium__c  +  Deployment_Complex__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Deployment</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Estimate__c</fullName>
+        <externalId>false</externalId>
+        <label>Estimate</label>
+        <referenceTo>Estimate__c</referenceTo>
+        <relationshipLabel>Integration (Real Time)</relationshipLabel>
+        <relationshipName>Integration_Real_Time</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Estimating_Factor__c</fullName>
+        <externalId>false</externalId>
+        <label>Estimating Factor</label>
+        <referenceTo>Estimating_Factor__c</referenceTo>
+        <relationshipLabel>Integration (Real Time)</relationshipLabel>
+        <relationshipName>Integration_Real_Time</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Implementation_Complex__c</fullName>
+        <externalId>false</externalId>
+        <formula>( Number_Of_Components_Complex__c *  Estimating_Factor__r.Implementation_Complex__c )*(1 +  Contingency_Complex__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Implementation Complex</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Implementation_Medium__c</fullName>
+        <externalId>false</externalId>
+        <formula>( Number_Of_Components_Medium__c *  Estimating_Factor__r.Implementation_Medium__c )*(1 +  Contingency_Medium__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Implementation Medium</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Implementation_Simple__c</fullName>
+        <externalId>false</externalId>
+        <formula>( Number_Of_Components_Simple__c *  Estimating_Factor__r.Implementation_Simple__c )*(1 +  Contingency_Simple__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Implementation Simple</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Implementation__c</fullName>
+        <externalId>false</externalId>
+        <formula>Implementation_Simple__c  +  Implementation_Medium__c  +  Implementation_Complex__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Implementation</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Methodology__c</fullName>
+        <externalId>false</externalId>
+        <label>Methodology</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_Of_Components_Complex__c</fullName>
+        <externalId>false</externalId>
+        <label>Number Of Components Complex</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_Of_Components_Medium__c</fullName>
+        <externalId>false</externalId>
+        <label>Number Of Components Medium</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_Of_Components_Simple__c</fullName>
+        <externalId>false</externalId>
+        <label>Number Of Components Simple</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Offering__c</fullName>
+        <externalId>false</externalId>
+        <label>Offering</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Scope_Complex__c</fullName>
+        <externalId>false</externalId>
+        <label>Scope Complex</label>
+        <length>2000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Scope_Medium__c</fullName>
+        <externalId>false</externalId>
+        <label>Scope Medium</label>
+        <length>2000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Scope_Simple__c</fullName>
+        <externalId>false</externalId>
+        <label>Scope Simple</label>
+        <length>2000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>System_Design_Complex__c</fullName>
+        <externalId>false</externalId>
+        <formula>( Number_Of_Components_Complex__c *  Estimating_Factor__r.System_Design_Complex__c )*(1 +  Contingency_Complex__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>System Design Complex</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>System_Design_Medium__c</fullName>
+        <externalId>false</externalId>
+        <formula>( Number_Of_Components_Medium__c *  Estimating_Factor__r.System_Design_Medium__c )*(1 +  Contingency_Medium__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>System Design Medium</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>System_Design_Simple__c</fullName>
+        <externalId>false</externalId>
+        <formula>( Number_Of_Components_Simple__c *  Estimating_Factor__r.System_Design_Simple__c )*(1 +  Contingency_Simple__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>System Design Simple</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>System_Design__c</fullName>
+        <externalId>false</externalId>
+        <formula>System_Design_Simple__c  +  System_Design_Medium__c  +  System_Design_Complex__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>System Design</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Testing_Complex__c</fullName>
+        <externalId>false</externalId>
+        <formula>( Number_Of_Components_Complex__c *  Estimating_Factor__r.Testing_Complex__c )*(1 +  Contingency_Complex__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Testing Complex</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Testing_Medium__c</fullName>
+        <externalId>false</externalId>
+        <formula>( Number_Of_Components_Medium__c *  Estimating_Factor__r.Testing_Medium__c )*(1 +  Contingency_Medium__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Testing Medium</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Testing_Simple__c</fullName>
+        <externalId>false</externalId>
+        <formula>( Number_Of_Components_Simple__c *  Estimating_Factor__r.Testing_Simple__c )*(1 +  Contingency_Simple__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Testing Simple</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Testing__c</fullName>
+        <externalId>false</externalId>
+        <formula>Testing_Simple__c  +  Testing_Medium__c  +  Testing_Complex__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Testing</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Integration (Real Time)</label>
+    <nameField>
+        <displayFormat>INR-{00000}</displayFormat>
+        <label>Integration (Real Time) Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Integration (Real Time)</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

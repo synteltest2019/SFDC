@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>About_Client__c</fullName>
+        <externalId>false</externalId>
+        <label>About Client</label>
+        <length>1000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Client_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Client Name</label>
+        <length>200</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Confidential__c</fullName>
+        <externalId>false</externalId>
+        <label>Confidential</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Low</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Medium</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>High</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Secret</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Discipline_Detils__c</fullName>
+        <externalId>false</externalId>
+        <label>Discipline Phase</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <controllingField>Discipline__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Business Modelling</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Requirement</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Analysis &amp; Design</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Implementation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Test</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Deployment</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Configuration &amp; Change Management</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Project Management</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Environment</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Operations &amp; Support</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Development</controllingFieldValue>
+                <valueName>Business Modelling</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Development</controllingFieldValue>
+                <valueName>Requirement</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Development</controllingFieldValue>
+                <valueName>Analysis &amp; Design</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Development</controllingFieldValue>
+                <valueName>Implementation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Development</controllingFieldValue>
+                <valueName>Test</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Development</controllingFieldValue>
+                <valueName>Deployment</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Support</controllingFieldValue>
+                <valueName>Configuration &amp; Change Management</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Support</controllingFieldValue>
+                <valueName>Project Management</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Support</controllingFieldValue>
+                <valueName>Environment</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Support</controllingFieldValue>
+                <valueName>Operations &amp; Support</valueName>
+            </valueSettings>
+        </valueSet>
+        <visibleLines>7</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Discipline__c</fullName>
+        <externalId>false</externalId>
+        <label>Discipline</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Development</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Support</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Duration_In_Business_Days__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(!(ISNULL(Planned_Start_Date__c) &amp;&amp; !(ISNULL(Planned_End_Date__c))) ,
+((Planned_End_Date__c) - ( Planned_Start_Date__c )) -
+( FLOOR ( ( ( ((Planned_End_Date__c)) - (Planned_Start_Date__c)) / 7 ) ) * 2 ) +
+CASE(MOD ( (Planned_Start_Date__c) - DATE( 1900,1,6 ),7),
+0,CASE( MOD (((Planned_End_Date__c)) - DATE( 1900,1,6 ),7),0,1,2 ),
+1,CASE( MOD (((Planned_End_Date__c)) - DATE( 1900,1,6 ),7),0,2,1 ),
+IF(MOD((Planned_Start_Date__c) - DATE( 1900,1,6 ),7) - MOD(((Planned_End_Date__c)) - DATE( 1900,1,6 ),7) &lt;= 0 ,0,
+IF(MOD(((Planned_End_Date__c)) - DATE( 1900,1,6 ),7) = 0,1,-2 ) ) )
+,
+((TODAY()) - ( Planned_Start_Date__c )) -
+( FLOOR ( ( ( (TODAY()) - (Planned_Start_Date__c)) / 7 ) ) * 2 ) +
+CASE(MOD ( (Planned_Start_Date__c) - DATE( 1900,1,6 ),7),
+0,CASE( MOD ((TODAY()) - DATE( 1900,1,6 ),7),0,1,2 ),
+1,CASE( MOD ((TODAY()) - DATE( 1900,1,6 ),7),0,2,1 ),
+IF(MOD((Planned_Start_Date__c) - DATE( 1900,1,6 ),7) - MOD((TODAY()) - DATE( 1900,1,6 ),7) &lt;= 0 ,0,
+IF(MOD((TODAY()) - DATE( 1900,1,6 ),7) = 0,1,-2 ) ) )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Duration (In Business Days)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Functional_Scope__c</fullName>
+        <externalId>false</externalId>
+        <label>Functional Scope</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Methodology__c</fullName>
+        <externalId>false</externalId>
+        <label>Methodology</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Agile</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Waterfall</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Iterative and incremental</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Spiral</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>V-Model</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Big Bang</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Magic Box</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Prototype</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Other__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Project Scope if Other</inlineHelpText>
+        <label>Other</label>
+        <length>200</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Planned_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Planned End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Planned_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Planned Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Project_Scope__c</fullName>
+        <externalId>false</externalId>
+        <label>Project Scope</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Requirements Gathering</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Process Definition</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Application Design</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Training Design and Development</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Build: Configuration</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Build: Customization</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Build: Integration</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Build: Data Migration/Conversion</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Application Testing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Integration Testing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Deployment Planning</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Deployment Execution</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Deployment Support</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>User Acceptance Testing (UAT)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Training Delivery</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Project Management</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Strategy Definition</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ongoing Application Maintenance</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Synopsis__c</fullName>
+        <externalId>false</externalId>
+        <label>Synopsis</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Team__c</fullName>
+        <externalId>false</externalId>
+        <label>Team</label>
+        <length>1000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Type_of_Work__c</fullName>
+        <externalId>false</externalId>
+        <label>Type of Work</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>RFP</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>RFQ</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Solution</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>IT Infrastructure Library</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Intellectual Property</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>IP Assessment</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Training</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Project</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Client_Name__c</columns>
+        <columns>Confidential__c</columns>
+        <columns>Planned_Start_Date__c</columns>
+        <columns>Planned_End_Date__c</columns>
+        <columns>Type_of_Work__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>RFP / Project Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Projects</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Client_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Confidential__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Planned_End_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Planned_Start_Date__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>About_Client__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Client_Name__c</lookupDialogsAdditionalFields>
+        <searchResultsAdditionalFields>Client_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Confidential__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Others_Cannot_be_blank</fullName>
+        <active>true</active>
+        <description>Others_Cannot_be_blank when other is selected</description>
+        <errorConditionFormula>AND( INCLUDES (  Project_Scope__c ,&apos;Other&apos;), ISBLANK( Other__c ))</errorConditionFormula>
+        <errorDisplayField>Other__c</errorDisplayField>
+        <errorMessage>Please explain the Project Scope</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Estimate_Summary</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Estimate Summary</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>window.open(&apos;/apex/ProjectEstimates?ProjectId={!Projects__c.Id}&apos;);</url>
+    </webLinks>
+</CustomObject>

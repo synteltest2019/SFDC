@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>Capture_Workstream_Components</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Capability_Work_Stream__c</fullName>
+        <externalId>false</externalId>
+        <label>Capability / Work Stream</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Offering__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Lead</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Contact</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Account</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Opportunity</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Case</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Solution</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Forecast</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Document</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Report</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Dashboard</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Product</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Chatter</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Console</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Custom Object (Other)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Campaign</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Sales Cloud</controllingFieldValue>
+                <controllingFieldValue>Marketing Cloud</controllingFieldValue>
+                <controllingFieldValue>Salesforce1 Platform</controllingFieldValue>
+                <valueName>Lead</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sales Cloud</controllingFieldValue>
+                <controllingFieldValue>Service Cloud</controllingFieldValue>
+                <controllingFieldValue>Marketing Cloud</controllingFieldValue>
+                <controllingFieldValue>Salesforce1 Platform</controllingFieldValue>
+                <controllingFieldValue>Chatter</controllingFieldValue>
+                <valueName>Contact</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sales Cloud</controllingFieldValue>
+                <controllingFieldValue>Service Cloud</controllingFieldValue>
+                <controllingFieldValue>Salesforce1 Platform</controllingFieldValue>
+                <controllingFieldValue>Community Cloud</controllingFieldValue>
+                <valueName>Account</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sales Cloud</controllingFieldValue>
+                <controllingFieldValue>Marketing Cloud</controllingFieldValue>
+                <controllingFieldValue>Work.com</controllingFieldValue>
+                <valueName>Opportunity</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sales Cloud</controllingFieldValue>
+                <controllingFieldValue>Service Cloud</controllingFieldValue>
+                <controllingFieldValue>Salesforce1 Platform</controllingFieldValue>
+                <valueName>Case</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sales Cloud</controllingFieldValue>
+                <controllingFieldValue>Service Cloud</controllingFieldValue>
+                <controllingFieldValue>Salesforce1 Platform</controllingFieldValue>
+                <valueName>Solution</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sales Cloud</controllingFieldValue>
+                <controllingFieldValue>Work.com</controllingFieldValue>
+                <valueName>Forecast</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sales Cloud</controllingFieldValue>
+                <controllingFieldValue>Service Cloud</controllingFieldValue>
+                <controllingFieldValue>Marketing Cloud</controllingFieldValue>
+                <controllingFieldValue>Chatter</controllingFieldValue>
+                <controllingFieldValue>Community Cloud</controllingFieldValue>
+                <valueName>Report</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sales Cloud</controllingFieldValue>
+                <controllingFieldValue>Service Cloud</controllingFieldValue>
+                <controllingFieldValue>Marketing Cloud</controllingFieldValue>
+                <controllingFieldValue>Salesforce1 Platform</controllingFieldValue>
+                <controllingFieldValue>Chatter</controllingFieldValue>
+                <controllingFieldValue>Community Cloud</controllingFieldValue>
+                <valueName>Dashboard</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sales Cloud</controllingFieldValue>
+                <controllingFieldValue>Salesforce1 Platform</controllingFieldValue>
+                <valueName>Product</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sales Cloud</controllingFieldValue>
+                <controllingFieldValue>Service Cloud</controllingFieldValue>
+                <controllingFieldValue>Community Cloud</controllingFieldValue>
+                <valueName>Chatter</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sales Cloud</controllingFieldValue>
+                <controllingFieldValue>Service Cloud</controllingFieldValue>
+                <controllingFieldValue>Marketing Cloud</controllingFieldValue>
+                <controllingFieldValue>Salesforce1 Platform</controllingFieldValue>
+                <controllingFieldValue>Chatter</controllingFieldValue>
+                <controllingFieldValue>Community Cloud</controllingFieldValue>
+                <valueName>Custom Object (Other)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sales Cloud</controllingFieldValue>
+                <controllingFieldValue>Marketing Cloud</controllingFieldValue>
+                <controllingFieldValue>Salesforce1 Platform</controllingFieldValue>
+                <valueName>Campaign</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Chatter</controllingFieldValue>
+                <valueName>Document</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Components__c</fullName>
+        <externalId>false</externalId>
+        <label>Components</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Configuration</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Workflow and Approval</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>User Administration</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Report and Dashboard</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Customization</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Data Migration</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Integration (Batch)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Integration (Real Time)</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Custom_Object_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Custom Object Name</label>
+        <length>200</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Methodology__c</fullName>
+        <externalId>false</externalId>
+        <label>Methodology</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Agile</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Waterfall</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Prototype</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Offering__c</fullName>
+        <externalId>false</externalId>
+        <label>Offering</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Sales Cloud</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Service Cloud</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Marketing Cloud</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Salesforce1 Platform</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Chatter</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Work.com</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Community Cloud</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Project__c</fullName>
+        <externalId>false</externalId>
+        <label>Project</label>
+        <referenceTo>Projects__c</referenceTo>
+        <relationshipLabel>Estimates</relationshipLabel>
+        <relationshipName>Estimates</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <label>Estimate</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Project__c</columns>
+        <columns>Offering__c</columns>
+        <columns>Capability_Work_Stream__c</columns>
+        <columns>Components__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Project__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>EST-{000000}</displayFormat>
+        <label>Estimate Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Estimates</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Custom_Object_Name_Required</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(ISPickval( Capability_Work_Stream__c ,&apos;Custom Object (Other)&apos;), 
+ISBLANK(Custom_Object_Name__c))</errorConditionFormula>
+        <errorDisplayField>Custom_Object_Name__c</errorDisplayField>
+        <errorMessage>Custom Object Name is Required</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Custom_Object_Name_Should_Blank</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( NOT(ISPickval( Capability_Work_Stream__c ,&apos;Custom Object (Other)&apos;)), 
+NOT(ISBLANK(Custom_Object_Name__c))
+)</errorConditionFormula>
+        <errorDisplayField>Custom_Object_Name__c</errorDisplayField>
+        <errorMessage>Must have no name for standard capability / work stream</errorMessage>
+    </validationRules>
+</CustomObject>
