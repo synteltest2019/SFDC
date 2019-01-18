@@ -6,7 +6,7 @@ public with sharing class AccountController {
         AccountControllerExt ctrl=new AccountControllerExt();
         return ctrl.getAccounts();
         //return [Select id, Name from account];
-    
+		//test
     }
     
     
